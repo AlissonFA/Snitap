@@ -292,7 +292,6 @@ section.hero {
   }
 }
 
-/* FALTA FINALIZAR ISSO AQUI, LEMBRE DE REMOVER OS COMENTÁRIOS APÓS FINALIZAR (POR AQUI MOTIVO ELE ESTÁ ESCONDENDO O DIVERTIDA, CREIO QUE POR CONTA DA ANIMAÇÃO) */
 @media (width <= 48em) {
   section.hero {
     max-width: 22.5rem;
@@ -302,6 +301,7 @@ section.hero {
     & h1 {
       width: 19.5rem;
       font: 700 2rem/1.25 "Syne", sans-serif;
+      margin-top: 2rem;
     }
 
     & h1 div {
@@ -314,6 +314,12 @@ section.hero {
 
     & .buttons {
       flex-direction: column-reverse;
+      gap: 1.5rem;
+    }
+
+    & > div:nth-child(2) {
+      max-width: 19.5rem;
+      height: 19.5rem;
     }
   }
 }
