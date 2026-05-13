@@ -1,7 +1,8 @@
 header {
   max-width: 80rem;
   width: 100%;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 2rem; /* Cima e baixo | Laterais */
+  margin-inline: auto;
 
   display: flex;
   align-items: center;

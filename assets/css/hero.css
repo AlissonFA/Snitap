@@ -1,0 +1,123 @@
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem; /* Cima e baixo | Laterais */
+  margin-inline: auto;
+
+  & h1 {
+    max-width: 40rem;
+  }
+
+  & h1 div {
+    display: inline-block; /* Block pra definir altura e largura */
+    overflow: hidden; /* esconde as outras palavras */
+    height: 5rem;
+    width: min-content; /* o mínimo de conteúdo que não vai quebrar as palavras (ele olha a maior palavra, como saudável) */
+    vertical-align: bottom;
+  }
+
+  & h1 span:nth-child(1), h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+
+  & h1 span:nth-child(2) {
+    color: var(--snitap-joy-mid);
+  }
+
+  & h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+
+  & h1 span {
+    display: block;
+
+    animation: slideUp 6s infinite ease;
+  }
+}
+
+@keyframes slideUp {
+  /* Radical static */
+  0%, 22% {
+    transform: translateY(0);
+  }
+
+  /* Pulinhos */
+
+  /* Divertida in */
+  23% {
+    transform: translateY(calc(-5rem - 15px));
+  }
+
+  25% {
+    transform: translateY(calc(-5rem + 10px));
+  }
+
+  27% {
+    transform: translateY(calc(-5rem - 5px));
+  }
+
+  29% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+
+  /* Divertida static */
+  33%, 55% {
+    transform: translateY(-5rem);
+  }
+
+  /* Saudável in */
+  56% {
+    transform: translateY(calc(-10rem - 15px));
+  }
+
+  58% {
+    transform: translateY(calc(-10rem + 10px));
+  }
+
+  60% {
+    transform: translateY(calc(-10rem - 5px));
+  }
+
+  62% {
+    transform: translateY(calc(-10rem + 5px));
+  }
+
+  /* Saudável static */
+  66%, 88% {
+    transform: translateY(-10rem);
+  }
+
+  /* Radical in */
+  89% {
+    transform: translateY(calc(-15rem - 15px));
+  }
+
+  91% {
+    transform: translateY(calc(-15rem + 10px));
+  }
+
+  93% {
+    transform: translateY(calc(-15rem - 5px));
+  }
+
+  95% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+
+  100% {
+    transform: translateY(-15rem);
+  }
+}
+
+/* FALTA FINALIZAR ISSO AQUI, LEMBRE DE REMOVER OS COMENTÁRIOS APÓS FINALIZAR */
+/* @media (width <= 48em) {
+  section.hero {
+    max-width: 22.5rem;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+
+    & h1 {
+      width: 19.5rem;
+      font: 700 2rem/1.25 "Syne", sans-serif;
+    }
+  }
+} */
