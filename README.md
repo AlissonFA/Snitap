@@ -19,7 +19,7 @@ Os principais destaques do desenvolvimento incluem:
 1. **Animação de texto rotativo no Hero:** Implementação de um slideUp cíclico com keyframes que simula "pulos" físicos ao trocar as palavras, com versões distintas para desktop (`5rem` de altura) e mobile (`2.5rem`), garantindo proporção visual em cada breakpoint.
 2. **Banner com gradiente animado em loop:** Combinação de `animation-timeline` com `background-position` em `400% 400%` para criar uma transição contínua entre as cores da marca sem cortes perceptíveis.
 3. **Galeria com scroll-driven animation:** As figuras da galeria entram com `translateY` conforme o scroll utilizando `animation-timeline: view()` e `animation-range`, com atraso configurável via `data-delay` para criar entrada escalonada.
-4. **Responsividade como desafio:** O layout desktop foi fornecido pelo professor — a adaptação mobile foi um desafio cumprido inteiramente por mim, reorganizando o Hero em `column-reverse`, ajustando tipografia, espaçamentos e direções de flex para telas até `48em`.
+4. **Responsividade como desafio:** O layout desktop foi ensinado pelo professor — a adaptação mobile foi um desafio cumprido inteiramente por mim, reorganizando o Hero em `column-reverse`, ajustando tipografia, espaçamentos e direções de flex para telas até `48em`.
 
 ## 🚀 Tecnologias <a id="tecnologias"></a>
 
